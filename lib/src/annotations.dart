@@ -8,6 +8,8 @@ class Action {
   const Action(this.type);
 }
 
-class Chiti {
-  const Chiti();
+class ChitiAnnotation {
+  const ChitiAnnotation();
 }
+
+const chiti = ChitiAnnotation();
