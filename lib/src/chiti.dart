@@ -3,7 +3,7 @@ import 'package:chiti/src/exceptions.dart';
 import 'package:flutter/foundation.dart';
 import 'package:rxdart/rxdart.dart';
 
-abstract class BaseChiti<Action, State> {
+abstract class Chiti<Action, State> {
   late BehaviorSubject<State> _state$;
 
   @protected
@@ -12,7 +12,7 @@ abstract class BaseChiti<Action, State> {
   @protected
   State get initialState;
 
-  BaseChiti() {
+  Chiti() {
     _state$ = BehaviorSubject.seeded(initialState);
   }
 
